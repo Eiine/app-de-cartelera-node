@@ -1,0 +1,73 @@
+GET  http://localhost:3000/api HTTP/1.1
+###
+
+
+POST http://localhost:3000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    
+    "name":"Miguel",
+    "username":"yanno",
+    
+    "pass":"123456"
+}
+
+###
+
+###
+
+DELETE  http://localhost:3000/api/15 HTTP/1.1
+Content-Type: application/json
+
+###
+PUT  http://localhost:3000/api/11 HTTP/1.1
+Content-Type: application/json
+
+{
+    
+    "name": "victor",
+    "username":"Admin",
+    "pass":"12345"
+}
+
+
+
+//Query para grupos
+
+###
+
+
+//////query grupos
+
+GET  http://localhost:3000/api/grupos HTTP/1.1
+###
+POST http://localhost:3000/api/grupos HTTP/1.1
+Content-Type: application/json
+
+{
+    
+    "nombre":"eduardo",
+    "encargado":"yanno",
+    "lugar":"mosconi",
+    "contacto":"12345",
+    "img":"algo mu bueno esta por empesar"
+}
+
+###
+DELETE  http://localhost:3000/api/grupos/14 HTTP/1.1
+Content-Type: application/json
+###
+
+PUT  http://localhost:3000/api/grupos/5 HTTP/1.1
+Content-Type: application/json
+
+{
+    
+    "nombre":"eduardo",
+    "encargado":"yanno",
+    "lugar":"mosconi",
+    "contacto":"12345",
+    "img":"algo mu bueno esta por empesar"
+    
+}

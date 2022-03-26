@@ -1,0 +1,57 @@
+.baner{
+    background-image: url("/img/baner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    font-size: 150px;
+    color: azure;
+    text-align: center;
+}
+
+.text-baner{
+    -webkit-text-stroke: 2px white;
+    color:darkorange; 
+    font-family: 'Lobster';
+    text-shadow: 0.1em 0.1em 0.5em white
+}
+
+body{
+    background-image: url("/img/fondo.png");
+}
+
+.nav-bar{
+    background-color: green;
+    height: 50px;
+    border: 5px solid;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+.item{
+    font-size: 40px;
+    margin-right: 150px;
+    text-decoration: none;
+    font-family: 'Lobster';
+    -webkit-text-stroke: 2px  black
+    ;
+    color:orange 
+    ; 
+    
+}
+h1{
+    color: white;
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    padding:10px;
+    width: 300px;
+    background-color: grey;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
