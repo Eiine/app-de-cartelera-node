@@ -30,13 +30,11 @@ body{
 
 .item{
     font-size: 40px;
-    margin-right: 150px;
+    margin-right: 90px;
     text-decoration: none;
     font-family: 'Lobster';
-    -webkit-text-stroke: 2px  black
-    ;
-    color:orange 
-    ; 
+    -webkit-text-stroke: 2px  black;
+    color:orange; 
     
 }
 h1{
@@ -53,5 +51,65 @@ form{
     outline: none;
 }
 
+h2{
+    color: black;
+    text-align: center;
+    margin: 0px;
+    margin-right: 35px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.nota.grupoGrande h2{
 
+    transform: translate(10px,100px)
+}
+section{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: auto;
+}
+
+#img{
+    height: 120px;
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+       
+}
+.nota.grande #img{
+    transform: translate(140px,50px) scale(1.7);
+}
+
+.nota.grupoGrande #img{
+
+    transform: translate(170px,50px) scale(1.7);
+}
+
+#cuerpo{
+    color: black;
+    
+    word-break: break-all;
+    margin:0 0 1em 2em;
+}
+.nota.grupoGrande #cuerpo{
+    transform: translate(0px,120px);
+    
+}
+
+
+.nota.grande #cuerpo{
+    transform: translate(0px,100px);
+}
+
+#error {
+    
+    padding: 4px 25px;
+    background: rgb(19, 143, 247);
+    border: 1px solid #1161B0;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration:none;
+    margin-left: 550px;     
+}
 

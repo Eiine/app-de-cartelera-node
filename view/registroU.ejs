@@ -1,17 +1,17 @@
 <%- include ("partials/cabezera") %> 
 <%- include ("partials/nav-bar") %> 
 
-
-<form action="">
+<h1>En este lugar podras registrarte como usuario lo cual es necesario para poder publicar noticias y crear grupos</h1>
+<form action="/" method="post">
   
 <label>Nombre:</label><br>
-  <input calss="input" type="text" style="padding: 5px;" ><br>
+  <input calss="input" type="text" style="padding: 5px;" name="name"><br>
 
 <label for="">Usuario: </label><br>
- <input calss="input" type="text" style="padding: 5px;"><br>
+ <input calss="input" type="text" style="padding: 5px;" name="username"><br>
 
  <label for="">Contraseña:</label><br>
-  <input calss="input" type="text"  style="padding: 5px;"><br>
+  <input calss="input" type="password"  style="padding: 5px;" name="pass"><br>
 
  <input type="submit" class="boton">
 

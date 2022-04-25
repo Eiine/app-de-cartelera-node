@@ -1,0 +1,19 @@
+<%- include ("partials/cabezera") %> 
+<%- include ("partials/nav-bar") %> 
+
+<h1>Bienvenido en este sector puedes escribir noticias que se mostraran en las notas de la cartelera. </h1>
+<form action="/noticias" method="post">
+  
+<label>Titulo:</label><br>
+  <input calss="input" type="text" style="padding: 5px;" name="titulo"><br>
+
+<label for="">Url de Imagen: </label><br>
+ <input calss="input" type="text" style="padding: 5px;" name="img"><br>
+
+ <label for="">Noticia:</label><br>
+  <input calss="input" type="text"  style="padding: 5px;" name="cerpo"><br>
+
+ <input type="submit" class="boton">
+
+
+</form>

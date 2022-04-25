@@ -1,48 +1,46 @@
-GET  http://localhost:3000/api HTTP/1.1
+GET  http://localhost:3000/api/usuarios HTTP/1.1
 ###
 
 
-POST http://localhost:3000/api HTTP/1.1
+POST http://localhost:3000/ HTTP/1.1
 Content-Type: application/json
 
 {
     
-    "name":"Miguel",
-    "username":"yanno",
+    "name":"grog",
+    "username":"miguel",
     
-    "pass":"123456"
+    "pass":"3873356180"
 }
 
 ###
 
 ###
 
-DELETE  http://localhost:3000/api/15 HTTP/1.1
+DELETE  http://localhost:3000/30 HTTP/1.1
 Content-Type: application/json
 
 ###
-PUT  http://localhost:3000/api/11 HTTP/1.1
+PUT  http://localhost:3000/30 HTTP/1.1
 Content-Type: application/json
 
 {
     
-    "name": "victor",
-    "username":"Admin",
+    "name": "miguel",
+    "username":"manuel",
     "pass":"12345"
 }
 
 
 
-//Query para grupos
 
-###
 
 
 //////query grupos
-
+###
 GET  http://localhost:3000/api/grupos HTTP/1.1
 ###
-POST http://localhost:3000/api/grupos HTTP/1.1
+POST http://localhost:3000/grupos HTTP/1.1
 Content-Type: application/json
 
 {
@@ -55,7 +53,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE  http://localhost:3000/api/grupos/14 HTTP/1.1
+DELETE  http://localhost:3000/grupos/7 HTTP/1.1
 Content-Type: application/json
 ###
 
@@ -71,3 +69,24 @@ Content-Type: application/json
     "img":"algo mu bueno esta por empesar"
     
 }
+
+
+// posteo de noticias
+###
+GET  http://localhost:3000/api/vnoticias HTTP/1.1
+Content-Type: application/json
+###
+POST http://localhost:3000/noticias HTTP/1.1
+Content-Type: application/json
+
+{
+    
+   "titulo":"Gran partido voley",
+   "img": "Tampoco",
+   "cerpo":"no existe"
+}
+
+###
+
+DELETE  http://localhost:3000/noticias/4 HTTP/1.1
+Content-Type: application/json

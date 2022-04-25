@@ -1,23 +1,25 @@
 <%- include ("partials/cabezera") %> 
 <%- include ("partials/nav-bar") %> 
 
+<h1>Este es el lugar para que puedas crear un grupo y darte a conoser, recuerda colocar 
+  los datos del grupo y de contacto correctos para que la gente pueda encontrarte de froma mas facil</h1>
 
-<form action="">
+  <form action="/grupos" method="post">
   
 <label>Nombre del grupo</label><br>
-  <input calss="input" type="text" style="padding: 5px;" ><br>
+  <input calss="input" type="text" style="padding: 5px;"  name="nombre"><br>
 
 <label for="">Encargado </label><br>
-    <input calss="input" type="text" style="padding: 5px;"><br>
+    <input calss="input" type="text" style="padding: 5px;" name="encargado"><br>
 
  <label for="">Lugar</label><br>
-    <input calss="input" type="text"  style="padding: 5px;"><br>
+    <input calss="input" type="text"  style="padding: 5px;" name="lugar"><br>
 
  <label>Contacto</label><br>
-    <input calss="input" type="text" style="padding: 5px;" ><br>
+    <input calss="input" type="text" style="padding: 5px;" name="contacto" ><br>
 
 <label for="">Imagen </label><br>
-    <input calss="input" type="text" style="padding: 5px;"><br>
+    <input calss="input" type="text" style="padding: 5px;" name="img"><br>
     
 <input type="submit" class="boton">
 </form>

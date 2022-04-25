@@ -1,7 +1,6 @@
 <%- include ("partials/cabezera") %>
 <%- include ("partials/nav-bar") %>
  
-
 <div class="pizarra" id="pizarra"><h1 class="cartelera" >Cartelera</h1>
     
    
@@ -12,19 +11,23 @@
                     <h3 id="chinche">.</h3>
                     <br>
                     <br>
-                    
-                    <h2><%= data[i].titulo %></h2> 
-                    <img src="<%= data[i].img %>" alt="" id="img"> 
-                    <p id="cuerpo"><%= data[i].cerpo %></p>     
+                    <img src="<%= data[i].img %>" alt="" id="img">
+                    <h2><%= data[i].nombre %></h2> 
+                    <p id="cuerpo">Encargado: <%= data[i].encargado %></p> 
+                    <p id="cuerpo">Lugar: <%= data[i].lugar %></p>     
+                    <p id="cuerpo">Contacto: <%= data[i].contacto %></p>
                      
+
+
                 </div>
                 
                 
 
            <% } %>
         <% } %>   
-        
+
 </div>
+
 <script>
     
 
@@ -35,7 +38,7 @@
         for (let i=0; i< notas.length; i++) { 
         notas[i].addEventListener("click",function grande(){
             
-            this.classList.toggle("grande")      
+            this.classList.toggle("grupoGrande")      
             console.log(this);            
         })
         }
@@ -44,5 +47,8 @@
     
     
 </script>
+    <br>
+<h1> </h1>
+<div id="boton" ><a href="/registroG" id="error" >Registrar un grupo</a></div>
 <%- include ("partials/piedepagina") %>
     

@@ -5,6 +5,10 @@
     border-radius: 3%;
     position: relative;
     top: 25px;
+    padding: 40px;
+    overflow-y:scroll ;
+       
+    
 }
 
 .cartelera{
@@ -14,22 +18,68 @@
     
 }
 
-.nota{
+.nota {
     background-color: white;
     height: 200px;
     width: 200px;
     border-radius: 15px;
-    float: left;
-    margin: 15px;
+    margin: 10px;
     position: relative;
+    float: left;
+    overflow: hidden;
+    
+}
+
+.nota.grande{
+    position: absolute;
+    
+    left: 300px;
+    height: 500px;
+    width: 500px;
+    font-size: 20px;
+    padding: 20px;
+    border:  10px solid;
+    box-shadow: 2px 2px 5px black;
+    z-index: 3;
 
 }
 
-.chinche{
+
+.nota.grupoGrande{
+    position: absolute;
+    
+    left: 300px;
+    height: 500px;
+    width: 500px;
+    font-size: 20px;
+    padding: 20px;
+    border:  10px solid;
+    box-shadow: 2px 2px 5px black;
+    z-index: 3;
+
+}
+
+.nota.grupoGrande #chinche{
+    transform: translate(170px,0px) 
+    
+}
+
+.grupoGrande h2{
+    font-size: 40px;
+}
+
+#chinche{
     color: red;
     font-size: 100px;
-    position: absolute;
+    position: relative;
     top: -160px;
-    left: 90px;
+    left: 80px;
+    float: left;
 }
+
+.nota.grande #chinche{
+    transform: translate(170px,0px) 
     
+}
+
+

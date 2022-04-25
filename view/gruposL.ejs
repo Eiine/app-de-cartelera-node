@@ -3,3 +3,27 @@
 
 
 <h1>Aqui estan listado los grupos que son parte de la comunidad</h1>
+
+<table class="table">
+    <thead>
+        <tr>N*</tr>
+        <tr>Nombre</tr>
+        <tr>Encargado</tr>
+        <tr>Lugar</tr>
+        <tr>Contacto</tr>
+    </thead>
+    <tbody>
+        <% if (data) { %>
+            <% for(let i =0 ; i< data.length; i++){ %>
+                <tr>
+                    <td><h1><%= (i+1) %></h1></td> 
+                    <td><h1><%= data[i].nombre %></h1> </td>
+                    <td><h1><%= data[i].encargado %></h1> </td>
+                    <td><h1><%= data[i].lugar %></h1> </td>
+                    <td><h1><%= data[i].contacto %></h1> </td>
+                    <td><h1><%= data[i].img %></h1> </td>
+                </tr>
+           <% } %>
+        <% } %>   
+    </tbody>
+</table>
