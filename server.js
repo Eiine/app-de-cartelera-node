@@ -24,7 +24,7 @@ app.use(session({
   saveUninitialized:true
 
 }))
-app.use(myconn(mysql, "mysql://root:BlA8ShaHzCBc09Nu8gaR@containers-us-west-147.railway.app:5824/railway","single"))
+app.use(myconn(mysql, conection,"single"))
 app.use(express.urlencoded({extended: false}));
 app.use(express.json())
 app.use(cookieparser())
