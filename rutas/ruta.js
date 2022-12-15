@@ -19,8 +19,8 @@ route.get("/noticias",autorizado,(req,res)=>{
   res.render("noticias")
 })
 
-route.get("/cartelera",(req,res)=>{
-  req.getConnection((err,conn)=>{
+route.get("/cartelera", async(req,res)=>{
+  await req.getConnection((err,conn)=>{
     if(err) return res.send(err)
 
     conn.query("SELECT * FROM `post-noticias`",(err,users)=>{
