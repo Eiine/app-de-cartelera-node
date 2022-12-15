@@ -24,7 +24,7 @@ app.use(session({
   saveUninitialized:true
 
 }))
-app.use(myconn(mysql, conection))
+app.use(myconn(mysql, connection,"single"))
 app.use(express.urlencoded({extended: false}));
 app.use(express.json())
 app.use(cookieparser())
