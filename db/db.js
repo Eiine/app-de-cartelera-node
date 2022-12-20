@@ -1,10 +1,10 @@
 
 const connection=
 {
-    host: "containers-us-west-147.railway.app",
-    port: 5824,
+    host: "containers-us-west-121.railway.app",
+    port: 7966,
     user: "root",
-    password: "BlA8ShaHzCBc09Nu8gaR",
+    password: "RnUqCLNVew8Rd8uA5CWz",
     database: "railway"
  };
 
