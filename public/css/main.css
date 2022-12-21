@@ -1,115 +1,105 @@
-.baner{
-    background-image: url("/img/baner.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border-radius: 15px;
-    font-size: 150px;
-    color: azure;
-    text-align: center;
+.baner {
+  background-image: url("/img/baner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 15px;
+  font-size: 150px;
+  color: azure;
+  text-align: center;
 }
 
-.text-baner{
-    -webkit-text-stroke: 2px white;
-    color:darkorange; 
-    font-family: 'Lobster';
-    text-shadow: 0.1em 0.1em 0.5em white
+.text-baner {
+  -webkit-text-stroke: 2px white;
+  color: darkorange;
+  font-family: "Lobster";
+  text-shadow: 0.1em 0.1em 0.5em white;
 }
 
-body{
-    background-image: url("/img/fondo.png");
+body {
+  background-image: url("/img/fondo.png");
 }
 
-.nav-bar{
-    background-color: green;
-    height: 50px;
-    border: 5px solid;
-    border-radius: 15px;
-    text-align: center;
-    
+.nav-bar {
+  background-color: green;
+  height: 50px;
+  border: 5px solid;
+  border-radius: 15px;
+  text-align: center;
 }
 
-.item{
-    font-size: 40px;
-    margin-right: 90px;
-    text-decoration: none;
-    font-family: 'Lobster';
-    -webkit-text-stroke: 2px  black;
-    color:orange; 
-    
+.item {
+  font-size: 40px;
+  margin-right: 90px;
+  text-decoration: none;
+  font-family: "Lobster";
+  -webkit-text-stroke: 2px black;
+  color: orange;
 }
-h1{
-    color: white;
-    text-align: center;
-}
-
-form{
-    margin: 0 auto;
-    padding:10px;
-    width: 300px;
-    background-color: grey;
-    border-radius: 5px;
-    outline: none;
+h1 {
+  color: white;
+  text-align: center;
 }
 
-h2{
-    color: black;
-    text-align: center;
-    margin: 0px;
-    margin-right: 35px;
-    margin-bottom: 5px;
-    font-size: 15px;
-}
-.nota.grupoGrande h2{
-
-    transform: translate(10px,100px)
-}
-section{
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    margin: auto;
+form {
+  margin: 0 auto;
+  padding: 10px;
+  width: 300px;
+  background-color: grey;
+  border-radius: 5px;
+  outline: none;
 }
 
-#img{
-    height: 120px;
-    width: 100px;
-    margin-left: 20px;
-    margin-bottom: 15px;
-       
+h2 {
+  color: black;
+  text-align: center;
+  margin: 0px;
+  margin-right: 35px;
+  margin-bottom: 5px;
+  font-size: 15px;
 }
-.nota.grande #img{
-    transform: translate(140px,50px) scale(1.7);
+.nota.grupoGrande h2 {
+  transform: translate(10px, 100px);
 }
-
-.nota.grupoGrande #img{
-
-    transform: translate(170px,50px) scale(1.7);
-}
-
-#cuerpo{
-    color: black;
-    
-    word-break: break-all;
-    margin:0 0 1em 2em;
-}
-.nota.grupoGrande #cuerpo{
-    transform: translate(0px,120px);
-    
+section {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin: auto;
 }
 
+#img {
+  height: 120px;
+  width: 100px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.nota.grande #img {
+  transform: translate(140px, 50px) scale(1.7);
+}
 
-.nota.grande #cuerpo{
-    transform: translate(0px,100px);
+.nota.grupoGrande #img {
+  transform: translate(170px, 50px) scale(1.7);
+}
+
+#cuerpo {
+  color: black;
+  word-break: break-all;
+  margin: 0 0 1em 2em;
+}
+.nota.grupoGrande #cuerpo {
+  transform: translate(0px, 120px);
+}
+
+.nota.grande #cuerpo {
+  transform: translate(0px, 100px);
 }
 
 #error {
-    
-    padding: 4px 25px;
-    background: rgb(19, 143, 247);
-    border: 1px solid #1161B0;
-    color: #fff;
-    border-radius: 4px;
-    text-decoration:none;
-    margin-left: 550px;     
+  padding: 4px 25px;
+  background: rgb(19, 143, 247);
+  border: 1px solid #1161b0;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 550px;
 }
-

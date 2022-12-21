@@ -1,48 +1,31 @@
-<%- include ("partials/cabezera") %>
-<%- include ("partials/nav-bar") %>
- 
+<%- include ("partials/cabezera") %> <%- include ("partials/nav-bar") %>
 
-<div class="pizarra" id="pizarra"><h1 class="cartelera" >Cartelera</h1>
-    
-   
-        <% if (data) { %>
-            <% for(let i =0 ; i< data.length; i++){ %>
-                
-                <div class="nota" id="nota" onclick="agrandar()"  >
-                    <h3 id="chinche">.</h3>
-                    <br>
-                    <br>
-                    
-                    <h2><%= data[i].titulo %></h2> 
-                    <img src="<%= data[i].img %>" alt="" id="img"> 
-                    <p id="cuerpo"><%= data[i].cerpo %></p>     
-                     
-                </div>
-                
-                
+<div class="pizarra" id="pizarra">
+  <h1 class="cartelera">Cartelera</h1>
 
-           <% } %>
-        <% } %>   
-        
+  <% if (data) { %> <% for(let i =0 ; i< data.length; i++){ %>
+
+  <div class="nota" id="nota" onclick="agrandar()">
+    <h3 id="chinche">.</h3>
+    <br />
+    <br />
+
+    <h2><%= data[i].titulo %></h2>
+    <img src="<%= data[i].img %>" alt="" id="img" />
+    <p id="cuerpo"><%= data[i].cuerpo %></p>
+  </div>
+
+  <% } %> <% } %>
 </div>
 <script>
-    
-
-
-    function agrandar(){
-        
-        let notas=document.getElementsByClassName("nota")  
-        for (let i=0; i< notas.length; i++) { 
-        notas[i].addEventListener("click",function grande(){
-            
-            this.classList.toggle("grande")      
-            console.log(this);            
-        })
-        }
-                
-        }
-    
-    
+  function agrandar() {
+    let notas = document.getElementsByClassName("nota");
+    for (let i = 0; i < notas.length; i++) {
+      notas[i].addEventListener("click", function grande() {
+        this.classList.toggle("grande");
+        console.log(this);
+      });
+    }
+  }
 </script>
 <%- include ("partials/piedepagina") %>
-    
