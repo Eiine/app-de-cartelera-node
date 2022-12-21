@@ -23,7 +23,7 @@ route.get("/cartelera", (req, res) => {
   req.getConnection((err, conn) => {
     if (err) return res.send(err);
 
-    conn.query("SELECT * FROM `post-noticias`", (err, users) => {
+    conn.query("SELECT * FROM `postNoticias`", (err, users) => {
       if (err) return res.send(err);
 
       res.render("cartelera", {
