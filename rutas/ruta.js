@@ -239,7 +239,7 @@ route.get("/api/vnoticias", (req, res) => {
   req.getConnection((err, conn) => {
     if (err) return res.send(err);
 
-    conn.query("SELECT * FROM `post-noticias`", (err, users) => {
+    conn.query("SELECT * FROM `postNoticias`", (err, users) => {
       if (err) return res.send(err);
 
       if (err) return res.send(err);
@@ -252,7 +252,7 @@ route.post("/noticias", (req, res) => {
   req.getConnection((err, conn) => {
     if (err) return res.send(err);
 
-    conn.query("INSERT INTO `post-noticias` set ?", [data], (err, users) => {
+    conn.query("INSERT INTO `postNoticias` set ?", [data], (err, users) => {
       const data = req.body;
 
       if (err) return res.send(err);
